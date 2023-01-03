@@ -1,0 +1,1 @@
+# ow_swear_helper
