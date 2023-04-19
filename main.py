@@ -18,8 +18,11 @@ except:
     print("parse dict.json failed, use default.")
 
 while 1 < 2:
-    content = pyperclip3.paste(text=True)
-    for key in replaceDict:
-        content = content.replace(key, replaceDict[key])
-    pyperclip3.copy(content)
+    try:
+        content = pyperclip3.paste(text=True)
+        for key in replaceDict:
+            content = content.replace(key, replaceDict[key])
+        pyperclip3.copy(content)
+    except:
+        pass
     sleep(1)
